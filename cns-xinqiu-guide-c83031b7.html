@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>新球体育 · 稳定资讯入口说明</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #f9f6f0;
+      font-family: 'Georgia', 'Noto Serif SC', 'Times New Roman', serif;
+      color: #2e2b27;
+      line-height: 1.75;
+      padding: 2rem 1rem;
+    }
+    .page {
+      max-width: 820px;
+      margin: 0 auto;
+      background: #fefcf7;
+      padding: 3rem 2.5rem 3.5rem;
+      border-radius: 2px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.03);
+    }
+    h1 {
+      font-size: 2.2rem;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      color: #1f1a16;
+      border-left: 5px solid #b9976a;
+      padding-left: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+    .subhead {
+      font-size: 1rem;
+      color: #736b63;
+      margin-top: -0.2rem;
+      margin-bottom: 2rem;
+      padding-left: 1.7rem;
+      border-bottom: 1px solid #e8e0d6;
+      padding-bottom: 1.2rem;
+    }
+    .hero-note {
+      background: #ede7dd;
+      padding: 1.5rem 2rem;
+      margin-bottom: 2.2rem;
+      border-radius: 0 6px 6px 0;
+      border-left: 4px solid #b9976a;
+      font-size: 1.05rem;
+      color: #2b2621;
+    }
+    .hero-note strong {
+      font-weight: 600;
+      color: #1f1914;
+    }
+    .section-title {
+      font-size: 1.3rem;
+      font-weight: 500;
+      color: #2b241e;
+      margin-top: 2.8rem;
+      margin-bottom: 0.8rem;
+      position: relative;
+      padding-left: 0.6rem;
+    }
+    .section-title::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0.4rem;
+      bottom: 0.4rem;
+      width: 3px;
+      background: #c9af8b;
+      border-radius: 2px;
+    }
+    p {
+      margin-bottom: 1.2rem;
+      text-align: justify;
+      word-break: break-word;
+    }
+    .highlight-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.8rem;
+      margin: 1.8rem 0 1rem;
+    }
+    .highlight-item {
+      flex: 1 1 200px;
+      background: #f4efe8;
+      padding: 1.2rem 1.4rem;
+      border-radius: 4px;
+      border-top: 3px solid #dac1a4;
+    }
+    .highlight-item h3 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #1f1914;
+      margin-bottom: 0.35rem;
+    }
+    .highlight-item p {
+      font-size: 0.95rem;
+      color: #3e3833;
+      margin-bottom: 0;
+    }
+    .quote-block {
+      background: #f3ede4;
+      padding: 1.8rem 2rem;
+      margin: 2.2rem 0;
+      border-radius: 0 8px 8px 0;
+      border-left: 6px solid #b58d5e;
+      font-style: normal;
+    }
+    .quote-block p {
+      margin-bottom: 0;
+      font-size: 1rem;
+    }
+    .quote-block .attribution {
+      margin-top: 0.8rem;
+      font-size: 0.9rem;
+      color: #6b6055;
+      letter-spacing: 0.02em;
+    }
+    .faq-mini {
+      margin: 2.5rem 0 1.8rem;
+      border-top: 1px dashed #ddd3c7;
+      padding-top: 1.8rem;
+    }
+    .faq-item {
+      margin-bottom: 1.2rem;
+    }
+    .faq-q {
+      font-weight: 600;
+      color: #2b241e;
+      margin-bottom: 0.1rem;
+    }
+    .faq-a {
+      color: #3e3731;
+      padding-left: 1rem;
+      border-left: 2px solid #dac1a4;
+      padding-left: 1rem;
+    }
+    .note-tip {
+      background: #f2ece3;
+      padding: 1rem 1.6rem;
+      border-radius: 6px;
+      margin: 2rem 0 1.2rem;
+      font-size: 0.95rem;
+      border: 1px solid #e2d6c8;
+      color: #2f2924;
+    }
+    .note-tip strong {
+      color: #1a1511;
+    }
+    .link-sentence {
+      margin-top: 2rem;
+      padding-top: 1.2rem;
+      border-top: 1px solid #e0d6ca;
+      font-size: 1rem;
+    }
+    a {
+      color: #7f623b;
+      text-decoration: none;
+      border-bottom: 1px dotted #b9976a;
+      transition: border-bottom 0.15s, color 0.15s;
+    }
+    a:hover {
+      color: #4d3a24;
+      border-bottom: 1px solid #4d3a24;
+    }
+    .footer-meta {
+      margin-top: 3rem;
+      font-size: 0.85rem;
+      color: #8f8275;
+      text-align: center;
+      border-top: 1px solid #e3d9ce;
+      padding-top: 1.8rem;
+    }
+    @media (max-width: 600px) {
+      .page { padding: 2rem 1.2rem; }
+      h1 { font-size: 1.7rem; padding-left: 0.8rem; }
+      .subhead { padding-left: 1rem; }
+      .hero-note { padding: 1.2rem 1.2rem; }
+      .highlight-grid { gap: 1rem; }
+      .quote-block { padding: 1.3rem 1.2rem; }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+  <h1>新球体育 · 信息通路说明</h1>
+  <div class="subhead">稳定入口 · 内容界面 · 使用指引</div>
+
+  <div class="hero-note">
+    <strong>关于新球体育</strong> —— 一个聚焦体育资讯与赛况的聚合型内容站点，以清晰的信息层级和低干扰的阅读环境，为使用者提供相对可靠的赛事动态与数据参考。
+  </div>
+
+  <p>
+    对于持续关注体育赛事的用户而言，一个稳定、响应速度良好的信息入口是日常获取内容的基础。作为内容型站点，<a href="https://cns-xinqiu.com">新球体育</a> 在保持页面结构简约的同时，也注重信息分类的逻辑性，使浏览者能够较快定位到感兴趣的板块。本站不设置强制弹窗或过度动效，页面加载后即进入内容阅读区域。
+  </p>
+
+  <div class="section-title">功能亮点</div>
+  <div class="highlight-grid">
+    <div class="highlight-item">
+      <h3>赛程聚合</h3>
+      <p>涵盖足球、篮球等主流联赛的赛程及比分更新，数据源经过多轮校验，减少明显滞后或偏差。</p>
+    </div>
+    <div class="highlight-item">
+      <h3>低噪界面</h3>
+      <p>无自动播放视频、无闪烁广告模块，页面内容以文字和静态图表为主，适合快速浏览。</p>
+    </div>
+    <div class="highlight-item">
+      <h3>跨端适配</h3>
+      <p>在桌面与移动端均保持一致的排版逻辑，文本可读性优先，不依赖特定分辨率。</p>
+    </div>
+  </div>
+
+  <div class="section-title">使用场景与建议</div>
+  <p>
+    <strong>日常速览：</strong> 适合在比赛日或午间休息时段打开 <a href="https://cns-xinqiu.com">新球体育</a>，快速查看当日焦点赛事及已结束场次的简要结果。页面头部通常设有导航分区，可按联赛或项目切换视图。
+  </p>
+  <p>
+    <strong>数据复核：</strong> 对于需要核对积分榜或交手记录的深度关注者，站内保留了过去若干轮次的表格汇总，可作为辅助参考。建议同时对比其他信息源，以获取更全面的判断。
+  </p>
+
+  <div class="quote-block">
+    <p>“信息获取的效率，往往取决于入口的稳定性和内容的组织方式。一个克制的界面，本身就是在尊重阅读者的时间。”</p>
+    <div class="attribution">—— 摘自站内使用说明</div>
+  </div>
+
+  <div class="section-title">常见问题摘要</div>
+  <div class="faq-mini">
+    <div class="faq-item">
+      <div class="faq-q">Q：页面加载速度如何？</div>
+      <div class="faq-a">站点采用轻量化资源，未使用重型框架或高清大图。实测在一般4G网络环境下，首屏内容可在2–3秒内呈现。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Q：是否有App或推送功能？</div>
+      <div class="faq-a">当前仅提供网页版，暂无独立应用或主动推送通知。建议用户自行通过浏览器书签保存 <a href="https://cns-xinqiu.com">新球体育</a> 以保持快速访问。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Q：内容更新频率？</div>
+      <div class="faq-a">赛程和比分类数据在主要联赛进行期间保持实时更新；专题文章及回顾类内容通常于赛后24小时内完成录入。</div>
+    </div>
+  </div>
+
+  <div class="note-tip">
+    <strong>说明提示：</strong> 本站为体育信息聚合展示平台，所有数据均来源于公开可查的赛事记录。使用者应自行判断信息准确性，并遵守当地法律法规进行合理参阅。
+  </div>
+
+  <div class="link-sentence">
+    <p>若尚未浏览过该站点，可尝试在浏览器中直接输入域名 <a href="https://cns-xinqiu.com">新球体育</a>，或通过搜索引擎检索对应名称。建议将常用页面添加至书签，以获得相对稳定的访问路径。</p>
+  </div>
+
+  <div class="footer-meta">
+    新球体育 · 信息界面说明 &nbsp;|&nbsp; 保持简洁与真实
+  </div>
+</div>
+</body>
+</html>
